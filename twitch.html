@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitch.tv</title>
+
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/sidebar.css">
+    <link rel="stylesheet" href="css-files/main.css">
+    <link rel="stylesheet" href="css-files/general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e2f82aed8e.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img src="icons/Twitch_Glitch_Logo_Purple.svg.png" class="twitch-icon">
+
+        <div class="browse">
+          Browse
+        </div> 
+        <div class="three-dot-div">
+          <img src="icons/3-dots-icon.png" class="three-dot">
+
+          <div class="tooltip">
+            More
+          </div>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <input type="text" placeholder="Search" class="searchbar">
+
+        <button id="search-button">
+          <img src="icons/search-icon.png" class="search-icon">
+
+          <div class="search-popup">
+            <input type="text" placeholder="Search" class="searchbar-popup">
+          </div>
+
+          <div class="tooltip">Search</div>
+        </button>
+        
+      </div>
+
+      <div class="right-section">
+        <button class="login">
+          Log In
+        </button>
+        
+        <button class="signup">
+          Sign Up
+        </button>
+
+        <button class="person-icon-button">
+          <img src="icons/person-icon.png" class="person-icon">
+
+          <div class="tooltip">
+            Profile
+          </div>
+
+          <div class="profile-popup">
+            <div class="popup-row">
+              <div class="popup-element">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 2c4.415 0 8 3.585 8 8s-3.585 8-8 8-8-3.585-8-8 3.585-8 8-8zm5.917 9a6.015 6.015 0 0 1-3.584 4.529A10 10 0 0 0 13.95 11h1.967zm0-2a6.015 6.015 0 0 0-3.584-4.529A10 10 0 0 1 13.95 9h1.967zm-3.98 0A8.002 8.002 0 0 0 10 4.708 8.002 8.002 0 0 0 8.063 9h3.874zm-3.874 2A8.002 8.002 0 0 0 10 15.292 8.002 8.002 0 0 0 11.937 11H8.063zM6.05 11a10 10 0 0 0 1.617 4.529A6.014 6.014 0 0 1 4.083 11H6.05zm0-2a10 10 0 0 1 1.617-4.529A6.014 6.014 0 0 0 4.083 9H6.05z" clip-rule="evenodd"></path>
+                </svg>
+                Language
+              </div>
+
+              <div class="right-arrow-div">
+                <img src="icons/right-arrow.png" class="right-arrow">
+              </div>
+            </div>
+
+            <div class="popup-row">
+              <div class="popup-element">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <g>
+                    <path fill-rule="evenodd" d="M8.614 2.134a8.001 8.001 0 001.388 15.879 8.003 8.003 0 007.884-6.635 6.947 6.947 0 01-2.884.62 7.004 7.004 0 01-6.388-9.864zM6.017 5.529a5.989 5.989 0 00-2.015 4.484c0 3.311 2.69 6 6 6a5.99 5.99 0 004.495-2.028 9.006 9.006 0 01-8.48-8.456z" clip-rule="evenodd"></path>
+                  </g>
+                </svg>
+              
+                Dark Theme
+              </div>
+              <div class="right-arrow-div">
+                <img src="icons/right-arrow.png" class="right-arrow">
+              </div>
+            </div>
+              
+            <div class="popup-row">
+              <div class="popup-element">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="m16.5 18 1.5-1.5-2.876-2.876a9.99 9.99 0 0 0 1.051-1.191L18 10l-1.825-2.433a9.992 9.992 0 0 0-2.855-2.575 35.993 35.993 0 0 1-.232-.14 6 6 0 0 0-6.175 0 35.993 35.993 0 0 1-.35.211L3.5 2 2 3.5 16.5 18zm-2.79-5.79a8 8 0 0 0 .865-.977L15.5 10l-.924-1.233a7.996 7.996 0 0 0-2.281-2.058 37.22 37.22 0 0 1-.24-.144 4 4 0 0 0-4.034-.044l1.53 1.53a2 2 0 0 1 2.397 2.397l1.762 1.762z" clip-rule="evenodd"></path>
+                  <path d="m11.35 15.85-1.883-1.883a3.996 3.996 0 0 1-1.522-.532 38.552 38.552 0 0 0-.239-.144 7.994 7.994 0 0 1-2.28-2.058L4.5 10l.428-.571L3.5 8 2 10l1.825 2.433a9.992 9.992 0 0 0 2.855 2.575c.077.045.155.092.233.14a6 6 0 0 0 4.437.702z"></path>
+                </svg>
+
+                Labeled Content
+              </div>
+
+              <div class="right-arrow-div">
+                <img src="icons/right-arrow.png" class="right-arrow">
+              </div>
+            </div>
+          
+            <div class="login-popup-row">
+              <div class="login-popup">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <g>
+                    <path d="M16 18h-4a2 2 0 0 1-1.964-1.622L12 14.414V16h4V4h-4v1.586l-1.964-1.964A2 2 0 0 1 12 2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2Z"></path>
+                    <path d="M7.5 6.5 9 5l5 5-5 5-1.5-1.5L10 11H2V9h8L7.5 6.5Z"></path>
+                  </g>
+                </svg>
+
+                Log In
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </header>
+    
+    <nav class="sidebar">
+      <div class="recommended">
+        RECOMMENDED CHANNELS
+        <button class="arrow-button">
+          <span class="arrow">
+            &#129136;
+          </span>
+          <span class="line">
+            |
+          </span>
+
+          <div class="tooltip">Collapse</div>
+        </button>
+      </div>
+
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/jason-profile.png">
+
+        <div class="status">
+          Jasontheween 
+          <span class="what-doing">Just Chatting</span>
+        </div>
+
+        <div class="viewer">
+          <div class="red-dot"></div>
+
+          <div class="viewer-count">
+            4.9K
+          </div>
+        </div>
+
+        <div class="title-popup">🔴WHERE DID THE TIMES GO?🔴LIFE CAN BE HARD BUT U MUST KEEP PUSHING🔴IM ER...</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/pewdiepie-profile.png">
+        
+        <div class="status">
+          PewDiePie
+          <span class="what-doing">Minecraft</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            2.5K
+          </div>
+        </div>
+        
+        <div class="title-popup">[DROPS ON] ⛏️Minecraft Reruns! ⛏️ All Minecraft videos in order! ∞ Binge @PewDie...</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/rainbow6-profile.png">
+        
+        <div class="status">
+          Rainbow6
+          <span class="what-doing">Tom Clancy's Rai...</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            45.3K
+          </div>
+        </div>
+        
+        <div class="title-popup">w7m esports vs Elevate // Six Invitational 2023 – Group Stage – Day 1</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/valorant-profile.png">
+        
+        <div class="status">
+          VALORANT
+          <span class="what-doing">VALORANT</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            6.3K
+          </div>
+        </div>
+        
+        <div class="title-popup">LEV vs. T1 - VCT Masters Shanghai - Group Stage</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/cibergun-profile.png">
+        
+        <div class="status">
+          Cibergun
+          <span class="what-doing">Minecraft</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            346
+          </div>
+        </div>
+        
+        <div class="title-popup">✅¡DROPS!✅|| CAPA - GLITCH MASK - EMOTES - EMBLEMA || !drop !capa !cape !em...</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/tectone-profile.png">
+        
+        <div class="status">
+          Tectone
+          <span class="what-doing">Wuthering Waves</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            9.5K
+          </div>
+        </div>
+        
+        <div class="title-popup">[DROPS] GIVEAWAY TO NEW FOLLOWERS | #1 F2P CALCHARO | DRAMA GAMING REACTING</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/GODMASK-profile.png">
+        
+        <div class="status">
+          GODMASK
+          <span class="what-doing">Minecraft</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            98
+          </div>
+        </div>
+        
+        <div class="title-popup">✅24/7🎁[EMOTE DROPS ON]✅Minecraft 15th Anniversary Long Stream🔥</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/subroza-profile.png">
+        
+        <div class="status">
+          Subroza
+          <span class="what-doing">VALORANT</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            3.5K
+          </div>
+        </div>
+        
+        <div class="title-popup">#1 HALAL STREAMER RANK 1 GRIND 🔴 TSM @Subroza 🔴 10 HOURS STREAM MAYBE??!!</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/gorgc-profile.jpeg">
+        
+        <div class="status">
+          Gorgc
+          <span class="what-doing">Dota 2</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            11.2K
+          </div>
+        </div>
+        
+        <div class="title-popup">Nigma vs Entity 1:0 - Fissure Tournament - NEW PATCH!</div>
+      </div>
+      <div class="channel">
+        <img class="channel-pfp" src="profiles/shanks_ttv-profile.png">
+        
+        <div class="status">
+          shanks_ttv
+          <span class="what-doing">VALORANT</span>
+        </div>
+        
+        <div class="viewer">
+          <div class="red-dot"></div>
+          
+          <div class="viewer-count">
+            2.3K
+          </div>
+        </div>
+        
+        <div class="title-popup">EG SHANKS | World Champion Dominating in Radiant Ranked</div>
+      </div>
+    </nav> 
+    
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <!--here one div extra is taken only in first 3 stream previews to try 
+      to traslate live and viewers as well -->
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <div class="game">Minecraft</div>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+    
+
+    <div class="category-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Categories
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="category-preview">
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/valorant.jpg">
+          </div>
+    
+          <div class="game-name">
+            VALORANT
+            
+            <p class="total-viewer">238K viewers</p>
+            
+            <div class="stream-tag">
+              <div class="tag">FPS</div>
+              <div class="tag">Shooter</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/just-chatting.jpg">
+          </div>
+          
+          <div class="game-name">
+            Just Chatting
+  
+            <p class="total-viewer">161K viewers</p>
+  
+            <div class="stream-tag">
+              <div class="tag">IRL</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/minecraft.jpg">
+          </div>
+    
+          <div class="game-name">
+            Minecraft
+            
+            <p class="total-viewer">18.8K viewers</p>
+  
+            <div class="stream-tag">
+              <div class="tag">Simulation</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/counter-strike-2.png">
+          </div>
+          
+          <div class="game-name">
+            counter-Strike
+  
+            <p class="total-viewer">56.6K viewers</p>
+  
+            <div class="stream-tag">
+              <div class="tag">FPS</div>
+              <div class="tag">Shooter</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/xdefiant.jpg">
+          </div>
+          
+          <div class="game-name">
+            XDefiant
+            
+            <p class="total-viewer">20.4K viewers</p>
+            
+            <div class="stream-tag">
+              <div class="tag">FPS</div>
+              <div class="tag">Shooter</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-preview">
+          <div class="game-pic">
+            <img src="games/dota-2.png">
+          </div>
+          
+          <div class="game-name">
+            Dota 2
+            
+            <p class="total-viewer">85.4K viewers</p>
+            
+            <div class="stream-tag">
+              <div class="tag">Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+    
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+         
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+    
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+            
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+         
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+
+    <div class="stream-tray">
+      <div class="tray-title">
+        <span class="highlighted-title">
+          Live channels
+        </span>
+        we think you'll like
+      </div>
+      
+      <div class="tray-preview">
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_pewdiepie.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">2.5K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/pewdiepie-profile.png">
+            </div>
+
+            <div class="stream-text">
+              [DROPS ON] ⛏️Minecraft Reruns!⛏️ Al...
+
+              <p class="streamer">PewDiePie</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">ASMR</div>
+                <div class="tag">memes</div>
+                <div class="tag">Anime</div>
+                <div class="tag">Al</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_valorant.jpg">
+              
+              <div class="live">LIVE</div>
+              <div class="current-viewer">6.3K viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/valorant-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              LEV vs T1 - VCT Masters Shanghai - Gr...
+              
+              <p class="streamer">VALORANT</p>
+              <p class="game">VALORANT</p>
+              
+              <div class="stream-tag">
+                <div class="tag">VCT</div>
+                <div class="tag">Esports</div>
+                <div class="tag">Champions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stream-preview">
+          <div class="live-pic-div-sp">
+            <div class="live-pic-sp">
+              <img src="live-user/live_user_g0dmask.jpg">
+            
+              <div class="live">LIVE</div>
+              <div class="current-viewer">98 viewers</div>
+            </div>
+          </div>
+          
+
+          <div class="pfp-text">
+            <div class="stream-pfp">
+              <img src="profiles/GODMASK-profile.png">
+            </div>
+            
+            <div class="stream-text">
+              ✅24/7🎁ALL NEW DROPS ON🎁Minecra...
+              
+              <p class="streamer">GODMASK</p>
+              <p class="game">Minecraft</p>
+
+              <div class="stream-tag">
+                <div class="tag">English</div>
+                <div class="tag">Portugues</div>
+                <div class="tag">Deutsch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="show-more">
+          Show more <img src="icons/down-arrow.png" class="down-arrow">
+        </button>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="cat-div">
+        <img class="coolcat" src="icons/coolcat.png">
+        <span class="join-twitch">
+          Join the Twitch community!
+        </span>
+        <span class="discover-stream">
+          Discover the best live streams anywhere.
+        </span>
+      </div>
+
+      <button class="signup-footer">
+        Sign Up
+      </button>
+    </footer>
+
+    <div class="end">
+      <img src="icons/An-AmazonCompany.png">
+    </div>
+  </body>
+</html>
