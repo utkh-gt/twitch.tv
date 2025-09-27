@@ -1,0 +1,68 @@
+body{
+  font-family: Roboto, Arial;
+  padding: 25px 0 55px 240px;
+  background-color: rgb(245, 245, 245);
+}
+
+@media (max-width: 800px) {
+  .discover-stream{
+    display: none;
+  }
+
+  .searchbar{
+    display: none;
+  }
+
+  #search-button{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #search-button:hover{
+    background-color: lightgray;
+  }
+  #search-button:hover .tooltip{
+    opacity: 1;
+  }
+
+  #search-button:focus-within .search-popup{
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1180px) {
+  .channel .status,
+  .channel .viewer,
+  .recommended{
+    display: none;
+  }
+
+  .sidebar{
+    width: 50px;
+  }
+
+  body{
+    padding-left: 75px;
+  }
+}
+
+@media (max-width: 1000px){
+  .tray-preview{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category-preview{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .tray-preview{
+    grid-template-columns: 1fr;
+  }
+
+  .category-preview{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

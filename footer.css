@@ -1,0 +1,56 @@
+.coolcat{
+  height: 38px;
+  width: 38px;
+  margin-left: 16px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: rgb(69, 16, 147);
+  border-radius: 5px 5px 0 0;
+  z-index: 100;
+}
+
+.cat-div{
+  display: flex;
+  align-items: center;
+}
+
+.join-twitch{
+  color: whitesmoke;
+  font-weight: bold;
+  margin-left: 6px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.discover-stream{
+  color: whitesmoke;
+  margin-left: 8px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.signup-footer{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 7px 10px;
+  margin-right: 55px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.signup-footer:hover{
+  background-color: rgb(237, 234, 234);
+}

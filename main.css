@@ -1,0 +1,220 @@
+.stream-tray,
+.category-tray{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.271);
+  padding-bottom: 35px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.show-more{
+  position: absolute;
+  bottom: -16px;
+  padding: 8px 15px;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(93, 2, 222);
+  background-color: rgb(245, 245, 245);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.show-more:hover{
+  background-color: lightgray;
+  color: black;
+}
+
+.down-arrow{
+  width: 13px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.tray-title{
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.highlighted-title{
+  color: rgb(106, 0, 218);
+  cursor: pointer;
+}
+
+.highlighted-title:hover{
+  text-decoration: underline;
+}
+
+.tray-preview{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.stream-preview{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.live-pic-div-sp{
+  background-color: rgb(245, 245, 245);
+  transition: background-color 0.35s;
+}
+
+.live-pic-div-sp:hover{
+  background-color: red;
+}
+
+.live-pic-sp{
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.35s;
+}
+
+.live-pic-sp:hover{
+  transform: translate(8px,-5px);
+}
+
+.live{
+  background-color: red;
+  display: inline-block;
+  color: white;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.current-viewer{
+  background-color: rgba(0, 0, 0, 0.615);
+  display: inline-block;
+  color: white;
+  padding: 3px 4px;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 0px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.live-pic-sp img{
+  width: 100%;
+  transition: transform 0.35s;
+}
+
+.pfp-text{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 10px;
+}
+
+.stream-pfp img{
+  width: 40px;
+  border-radius: 20px;
+  margin: 7px 10px 0 0;
+  cursor: pointer;
+}
+
+.stream-text{
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.streamer,
+.game,
+.total-viewer{
+  margin: 3px 0 0 0;
+  font-weight: normal;
+  color: rgb(89, 89, 89);
+  font-size: 13px;
+}
+
+.game:hover{
+  color: rgb(100, 21, 211);
+}
+
+.stream-tag{
+  display: flex;
+  column-gap: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.tag{
+  background-color: #e5e5e5;
+  color: rgb(100, 100, 100);
+  padding: 2px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tag:hover{
+  background-color: #d5d5d5;
+}
+
+.category-preview{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+
+/* game pic is the div*/
+.game-pic{
+  background-color: rgb(245, 245, 245);
+  margin-top: 20px;
+  transition: background-color 0.35s;
+}
+
+.game-pic:hover{
+  background-color: rgb(69, 16, 147);
+}
+
+.game-pic img:hover{
+  transform: translate(9px, -6px);
+}
+
+.game-pic img{
+  width: 100%;
+  transition: transform 0.35s;
+  cursor: pointer;
+}
+
+.game-name{
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.total-viewer{
+  font-size: 14px;
+}
+
+.end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+.end img{
+  width: 150px;
+}

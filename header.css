@@ -1,0 +1,258 @@
+.twitch-icon{
+  height: 28px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.search-icon{
+  height: 22px;
+  width: 22px;
+  padding-right: 3px;
+}
+
+.person-icon{
+  height: 28px;
+  cursor: pointer;
+}
+
+.three-dot{
+  height: 22px;
+  width: 22px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  box-shadow: 0 1px 1px rgba(128, 128, 128, 0.282);
+  z-index: 200;
+}
+
+.left-section,
+.middle-section,
+.right-section{
+  display: flex;
+  align-items: center;
+}
+
+.left-section{
+  column-gap: 10px;
+}
+
+.browse{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.browse:hover{
+  color: rgb(145, 71, 255);
+}
+
+.three-dot-div,
+.person-icon-button{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: none;
+  padding: 4px 5px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.person-icon-button{
+  margin-right: 8px;
+  padding: 2px 4px;
+}
+
+.three-dot-div:hover,
+.person-icon-button:hover{
+  background-color: lightgray;
+}
+
+.three-dot-div .tooltip,
+.person-icon-button .tooltip,
+#search-button .tooltip{
+  position: absolute;
+  bottom: -32px;
+  color: white;
+  background-color: rgb(56, 56, 56);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out 0.15s;
+  pointer-events: none;
+}
+
+.three-dot-div:hover .tooltip,
+.person-icon-button:hover .tooltip{
+  opacity: 1;
+}
+
+.searchbar{
+  flex: 1;
+  height: 28px;
+  width: 300px;
+  margin-left: 40px;
+  border: 1px solid rgba(109, 109, 109, 0.772);
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+  padding-top: 2px;
+  transition: all 0.15s;
+}
+
+.searchbar:hover,
+.searchbar-popup:hover{
+  border-width: 2px;
+}
+
+.searchbar::placeholder{
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+#search-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(234, 234, 234);
+  cursor: not-allowed;
+}
+
+.search-popup{
+  position: absolute;
+  bottom: -50px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px lightgray;
+  z-index: 300;
+  visibility: hidden;
+}
+
+.searchbar-popup{
+  height: 28px;
+  width: 300px;
+  border: 1px solid rgba(109, 109, 109, 0.772);
+  border-radius: 5px;
+  padding: 0 10px;
+  padding-top: 2px;
+  transition: all 0.15s;
+}
+
+.right-section{
+  column-gap: 8px;
+}
+
+.profile-popup{
+  position: absolute;
+  right: -3px;
+  bottom: -180px;
+  font-size: 13px;
+  width: 200px;
+  padding-top: 8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 0 4px 2px lightgray;
+  visibility: hidden;
+}
+
+.person-icon-button:focus .profile-popup{
+  visibility: visible;
+}
+
+.popup-row{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 7px 7px;
+  margin: 2px 8px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+
+.login-popup-row{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-top: 1px solid lightgray;
+}
+
+.login-popup{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  column-gap: 6px;
+  padding: 7px 5px;
+  margin: 8px 8px;
+  border-radius: 5px;
+}
+
+.popup-row:hover,
+.login-popup:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.popup-element{
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+.right-arrow-div{
+  position: absolute;
+  right: 5px;
+}
+
+.right-arrow{
+  width: 13px;
+}
+
+.login{
+  color: black;
+  background-color: rgb(234, 234, 234);
+  padding: 7px 8px;
+  margin-left: 5px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.login:hover{
+  background-color: rgb(208, 207, 207);
+}
+
+.signup{
+  background-color: rgb(145, 71, 255);
+  color: white;
+  padding: 7px 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.signup:hover{
+  background-color: rgb(109, 38, 214);
+}

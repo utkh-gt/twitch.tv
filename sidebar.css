@@ -1,0 +1,138 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  bottom: 55px;
+  left: 0;
+  max-width: 100%;
+  background-color: #d3d3d360;
+  z-index: 100;
+}
+
+.recommended{
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.arrow-button{
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  background-color: #d3d3d300;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 6px;
+  padding-right: 1px;
+  margin-right: 5px;
+  margin-left: 8px;
+}
+
+.arrow-button .tooltip{
+  position: absolute;
+  right: -68px;
+  color: white;
+  background-color: rgb(56, 56, 56);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out 0.15s;
+  pointer-events: none;
+}
+
+.arrow-button:hover{
+  background-color: rgb(207, 207, 207);
+}
+
+.arrow-button:hover .tooltip{
+  opacity: 1;
+}
+
+.line{
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.channel{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.channel:hover{
+  background-color: rgb(207, 207, 207);
+}
+
+.title-popup{
+  position: absolute;
+  right: -275px;
+  max-width: 250px;
+  background-color: white;
+  font-size: 12px;
+  font-weight: 350;
+  padding: 6px 8px;
+  box-shadow: 0 0 5px 2px lightgray;
+  border-radius: 5px;
+  line-height: 17px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.channel:hover .title-popup{
+  visibility: visible;
+}
+
+.channel-pfp{
+  width: 30px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 9px;
+}
+
+.what-doing{
+  font-weight: normal;
+  color: rgb(89, 89, 89);
+  font-size: 13px;
+}
+
+.viewer{
+  display: flex;
+  align-items: top;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+}
+
+.red-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(234, 1, 1);
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.viewer-count{
+  font-size: 13px;
+  color: rgb(54, 54, 54);
+}
